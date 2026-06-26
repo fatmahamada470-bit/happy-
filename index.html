@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love 💜</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Stars -->
+<div id="stars"></div>
+
+<!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- PASSWORD SCREEN -->
+<section id="password-screen" class="screen active">
+
+    <div class="password-box">
+
+        <h1>Enter Password</h1>
+
+        <p class="hint">
+            Hint: The one you love more than anything
+        </p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter Password"
+        >
+
+        <button onclick="checkPassword()">
+            Enter
+        </button>
+
+    </div>
+
+</section>
+
+<!-- WORDS SCREEN -->
+<section id="words-screen" class="screen">
+
+    <h1 id="word-display"></h1>
+
+    <div class="navigation hidden" id="words-navigation">
+
+    <button onclick="showSection('letter-screen')">
+        Click Here Please ✨
+    </button>
+
+</div>
+
+</section>
+
+<!-- LETTER SCREEN -->
+<section id="letter-screen" class="screen">
+
+    <div class="envelope-container">
+
+    <div class="envelope">
+
+        <div class="envelope-flap"></div>
+
+        <div class="letter">
+
+            <h2>To the one I love ❤️</h2>
+
+            <p>
+                Every moment with you feels special, you are my happiness, my peace, and my heart, and  I wish to spend my whole life with you♥️
+
+    Happy Birthday ya ro7y✨  
+
+    I hope this year brings you as much happiness as you bring to my life♥️
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="navigation">
+
+        <button onclick="backToWords()">
+            Click Back
+        </button>
+
+        <button onclick="startPhotosSection()">
+            Click Here
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PHOTOS SCREEN -->
+<section id="photos-screen" class="screen">
+
+    <div id="photo-container">
+
+    <div class="photo-card" id="card1">
+        <img id="photo1" src="images/photo1.jpg">
+        <p class="photo-note">Day One: My eyes turned to a man for the first time in my life… and it was you❤</p>
+    </div>
+
+    <div class="photo-card" id="card2">
+        <img id="photo2" src="images/photo2.jpg">
+        <p class="photo-note">I love this moment so much… and I’m even more excited for our engagement❤</p>
+    </div>
+
+    <div class="photo-card" id="card3">
+        <img id="photo3" src="images/photo3.jpg">
+        <p class="photo-note"> I love this day… I felt happy, I realized we are so alike, and I felt even more comfortable with you✨</p>
+    </div>
+
+</div>
+
+    <div id="photo-navigation" class="navigation hidden">
+
+        <button onclick="showSection('letter-screen')">
+            Click Back
+        </button>
+
+        <button onclick="startVideoIntro()">
+    Click Here
+</button>
+
+    </div>
+
+</section>
+
+<!-- VIDEO INTRO -->
+<section id="video-intro-screen" class="screen">
+
+    <h1 class="video-intro-text">
+        Our memories together… and I can’t wait to make new ones with you❤️
+    </h1>
+
+</section>
+
+<!-- VIDEO SCREEN -->
+
+<section id="video-screen" class="screen">
+
+    <video
+        id="birthday-video"
+        controls
+    >
+        <source
+            src="video/birthday-video.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+    <div
+        id="video-navigation"
+        class="navigation hidden"
+    >
+
+        <button onclick="showSection('photos-screen')">
+            Click Back
+        </button>
+
+        <button onclick="startHeartGallery()">
+            Click Here
+        </button>
+
+    </div>
+
+</section>
+
+<!-- HEART GALLERY -->
+<section id="heart-screen" class="screen">
+
+    <h1 class="heart-title">
+        You may not know this, but your random photos are my favorite thing to look at ❤️
+    </h1>
+
+    <div id="heart-gallery">
+
+        <!-- Photos 4 → 42
+             will be created automatically by JavaScript -->
+
+    </div>
+
+<div id="love-text">
+    I Love You ❤️
+</div>
+
+    <div id="heart-navigation" class="navigation hidden">
+
+    <button onclick="showSection('video-screen')">
+        Click Back
+    </button>
+
+</div>
+
+
+</section>
+
+<section id="final-screen" class="screen">
+
+    <h1>
+        I Love You ❤️
+    </h1>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
